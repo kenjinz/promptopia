@@ -21,6 +21,7 @@ const handler = NextAuth({
 
       return cloneSession;
     },
+    //@ts-ignore
     async signIn({
       profile,
     }: {
