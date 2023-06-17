@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Schema, model, models } from 'mongoose';
 const promptSchema = new Schema({
   creator: {
