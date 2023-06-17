@@ -1,3 +1,4 @@
+// @ts-nocheck
 import PromptCard from './PromptCard';
 import React from 'react';
 

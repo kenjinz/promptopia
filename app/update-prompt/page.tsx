@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -16,7 +17,6 @@ const EditPrompt = () => {
     const getPromptDetails = async () => {
       const response = await fetch(`/api/prompt/${promptId}`);
       const data = await response.json();
-      console.log('🚀 ~ file: page.tsx:19 ~ getPromptDetails ~ data:', data);
       setPost({ prompt: data.prompt, tag: data.tag });
     };
     console.log('🚀 ~ file: page.tsx:25 ~ useEffect ~ promptId:', promptId);

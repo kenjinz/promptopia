@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 import { useState } from 'react';
 import { useSession } from 'next-auth/react';
@@ -11,6 +12,7 @@ const CreatePrompt = () => {
     prompt: '',
     tag: '',
   });
+  // @ts-nocheck
   const createPrompt = async (e) => {
     e.preventDefault();
 
